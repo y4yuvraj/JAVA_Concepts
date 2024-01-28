@@ -1,5 +1,5 @@
-package collection.map;
-
+package map;
+//Map is actually not part of collection interface
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
