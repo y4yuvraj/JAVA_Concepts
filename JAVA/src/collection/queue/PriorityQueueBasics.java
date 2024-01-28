@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Random;
 
-public class QueueBasics {
+public class PriorityQueueBasics {
 	public static void main(String[] args) {
 		Queue<Integer> q1=new PriorityQueue<Integer>();
 
