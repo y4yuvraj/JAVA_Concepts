@@ -18,4 +18,19 @@ public class DisplayMessage {
 		
 	}
 	
+	public synchronized void syncMethod1()
+	{
+		System.out.println(Thread.currentThread().getName() +" is running the synchronized method");
+	}
+	
+	public void nonSyncMethod()
+	{
+		System.out.println(Thread.currentThread().getName() +" is running the non-synchronized method");
+	}
+	
+	public static synchronized void staticSyncMethod()
+	{
+		System.out.println(Thread.currentThread().getName() +" is running the static synchronized method");
+	}
+	
 }

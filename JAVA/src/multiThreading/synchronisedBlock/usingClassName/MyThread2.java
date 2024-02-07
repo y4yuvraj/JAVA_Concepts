@@ -1,12 +1,11 @@
 package multiThreading.synchronisedBlock.usingClassName;
 
-public class MyThread extends Thread {
-
+public class MyThread2 extends Thread {
 	DisplayMessage dm;
 	String name;
 	
 	
-	public MyThread(DisplayMessage dm,String name) {
+	public MyThread2(DisplayMessage dm,String name) {
 		super();
 		this.dm = dm;
 		this.name=name;
@@ -16,7 +15,6 @@ public class MyThread extends Thread {
 
 	public void run()
 	{
-		dm.displayMethod(name);
+		dm.syncMethod1();
 	}
-	
 }
