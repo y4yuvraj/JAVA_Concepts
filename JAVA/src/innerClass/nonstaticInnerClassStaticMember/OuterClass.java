@@ -9,7 +9,7 @@ public class OuterClass {
 	
 	class InnerClass
 	{
-		static void m2()
+		static void m2() // we actually cant make static method inside inner class idk why this runs
 		{
 			System.out.println("inner class method");
 		}
