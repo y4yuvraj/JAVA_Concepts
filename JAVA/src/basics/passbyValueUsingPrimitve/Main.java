@@ -11,7 +11,7 @@ public class Main {
 		System.out.println("x= "+x+" y="+y);
 	}
 
-	//java is pass by value
+	//java is pass by value for primitve data types
 	
 	private static void swap(int x, int y) {
 		int t;
