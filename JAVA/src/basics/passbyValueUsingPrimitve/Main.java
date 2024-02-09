@@ -1,4 +1,4 @@
-package basics.passbyValue;
+package basics.passbyValueUsingPrimitve;
 
 public class Main {
 
