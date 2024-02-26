@@ -8,7 +8,7 @@ public class Main {
 		
 		
 		MyThread1 t1=new MyThread1(dm1, "yuv1");  //this runs the sync block with class lock
-		MyThread2 t2=new MyThread2(dm1, "yuv2"); //this runs the sync method
+		MyThread2 t2=new MyThread2(dm2, "yuv2"); //this runs the sync method
 		MyThread3 t3=new MyThread3(dm1, "yuv3"); //this runs static synchronized method
 		MyThread1 t4=new MyThread1(dm2, "yuv4");
  		t1.setName("t1");
@@ -25,6 +25,7 @@ public class Main {
  		t4.start();
 		t2.start();
 		t3.start();
+		
 	}
 }
 //we see thread 3 is not able to run 
