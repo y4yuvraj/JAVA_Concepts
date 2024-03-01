@@ -8,7 +8,7 @@ public class Programa5 {
 		int x=(int) d;
 		System.out.println(x);
 		char c=(char) x;
-		System.out.println(c);
+		System.out.println(c); 
 	}
 
 }
