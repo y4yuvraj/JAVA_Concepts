@@ -1,4 +1,4 @@
-package generic.restrictingCustomGenericClass.nonFinalClass;
+package generic.boudingCustomGenericClass.nonFinalClass;
 
 import java.util.List;
 
