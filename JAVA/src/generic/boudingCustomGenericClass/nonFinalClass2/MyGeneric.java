@@ -22,6 +22,7 @@ public class MyGeneric<T extends List<?>> {
 		return obj;
 	}
 	
+
 	
 	public static <T> T m1(T t)
 	{
