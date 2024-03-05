@@ -19,6 +19,7 @@ public class WildCardDemo {
 		WildCardDemo obj=new WildCardDemo();
 		ArrayList<Integer> l1= new ArrayList<Integer>(Arrays.asList(1,2,3,4,5));
 		ArrayList<Number> l2= new ArrayList<>(Arrays.asList(11,12,13,14,15));
+//		ArrayList<Double> l3= new ArrayList<>(Arrays.asList(11,12,13,14,15));  not allowed
 		obj.m1(l1);
 		obj.m1(l2);
 	}
