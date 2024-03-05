@@ -8,7 +8,6 @@ import java.util.List;
 public class MyGeneric<T extends List<?>> {
 
 	public T obj;
-
 	public MyGeneric(T obj) {
 		super();
 		this.obj = obj;
@@ -21,6 +20,12 @@ public class MyGeneric<T extends List<?>> {
 	{
 		System.out.println("Type of object "+obj.getClass().getName());
 		return obj;
+	}
+	
+	
+	public static <T> T m1(T t)
+	{
+		return t;
 	}
 	
 }
