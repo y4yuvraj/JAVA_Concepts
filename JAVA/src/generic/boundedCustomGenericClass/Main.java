@@ -1,4 +1,4 @@
-package generic.restrictingCustomGenericClass;
+package generic.boundedCustomGenericClass;
 
 public class Main {
 

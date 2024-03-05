@@ -1,5 +1,7 @@
 package generic.restrictingCustomGenericClass.nonFinalClass;
 
+import java.util.List;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -10,5 +12,4 @@ public class Main {
 		MyGeneric<MyClass> obj1=new MyGeneric<>(new MyClass(2)); 
 		System.out.println(obj1.perfomSomeOperation());
 	}
-
 }

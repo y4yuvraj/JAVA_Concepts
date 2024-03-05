@@ -1,4 +1,4 @@
-package generic.restrictingCustomGenericClass;
+package generic.boundedCustomGenericClass;
 //since String Class is final it cannot be extended
 //so we can not restrict normally like MyGeneric<T extends String> 
 public class MyGeneric<T> {
