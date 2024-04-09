@@ -19,13 +19,13 @@ public class SerializationAndDeserialization {
 
 		try {
 			fos = new FileOutputStream(
-					"/Users/91628/Desktop/JAVAcoding/JavaGithub/JAVA_Concepts/JAVA/src/ioStream/serializationAndDeserialization/object.ser");
+					"/Users/y/Desktop/JAVAcoding/JavaGithub/JAVA_Concepts/JAVA/src/ioStream/serializationAndDeserialization/object.ser");
 			oos = new ObjectOutputStream(fos);
 
 			oos.writeObject(obj);
 
 			fis = new FileInputStream(
-					"/Users/91628/Desktop/JAVAcoding/JavaGithub/JAVA_Concepts/JAVA/src/ioStream/serializationAndDeserialization/object.ser");
+					"/Users/y/Desktop/JAVAcoding/JavaGithub/JAVA_Concepts/JAVA/src/ioStream/serializationAndDeserialization/object.ser");
 			ois = new ObjectInputStream(fis);
 			Object obj2 = ois.readObject();
 			Employee empObj = (Employee) obj2;
