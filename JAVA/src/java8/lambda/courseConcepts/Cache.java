@@ -6,13 +6,14 @@ import java.util.Comparator;
 //interface
 interface CacheIterator {
 	boolean hasNext();
+
 	Bookmark next();
 }
 
 //abstract class
-abstract class Test {
-	abstract void apply();
-}
+//abstract class Test {
+//	abstract void apply();
+//}
 
 //main class
 public class Cache {
@@ -28,25 +29,23 @@ public class Cache {
 			items[next++] = item;
 	}
 
-	public CacheIterator iterator() {
-		return new MyCacheIterator();
-	}
-
 	private class MyCacheIterator implements CacheIterator {
 		private int i = 0;
 
 		@Override
 		public boolean hasNext() {
-			// TODO Auto-generated method stub
 			return i < items.length;
 		}
 
 		@Override
 		public Bookmark next() {
-			// TODO Auto-generated method stub
 			return items[i++];
 		}
 
+	}
+
+	public CacheIterator iterator() {
+		return new MyCacheIterator();
 	}
 
 	public static void main(String[] args) {
@@ -94,7 +93,6 @@ public class Cache {
 
 			@Override
 			public int compare(Bookmark o1, Bookmark o2) {
-				// TODO Auto-generated method stub
 				return o1.getRating() < o2.getRating() ? 1 : -1;
 			}
 
@@ -109,7 +107,8 @@ public class Cache {
 
 		// Lambdas
 		Arrays.sort(recommendedItems.items,
-				(o1, o2) -> new Integer(o1.getTitle().length()).compareTo(new Integer(o2.getTitle().length())));
+//				(o1, o2) -> new Integer(o1.getTitle().length()).compareTo(new Integer(o2.getTitle().length()))
+				(o1, o2) -> Integer.valueOf(o1.getTitle().length()).compareTo(Integer.valueOf(o2.getTitle().length())));
 		System.out.println("\nSorted by length (using Lambda) ...");
 		iterator = recommendedItems.iterator();
 
@@ -121,7 +120,7 @@ public class Cache {
 
 	}
 
-	public void go(Test test) {
-		test.apply();
-	}
+//	public void go(Test test) {
+//		test.apply();
+//	}
 }
